@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio Educacional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção 1: Apresentação Pessoal -->
+        <section id="sobre" class="hero-section">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="typed-text">Olá, sou <span id="nome">Seu Nome</span></h1>
+                <p class="subtitle">Estudante de <span id="curso">Seu Curso</span></p>
+                <p class="description">
+                    Bem-vindo ao meu portfolio educacional, onde compartilho minha jornada acadêmica
+                    e os projetos que tenho desenvolvido ao longo da minha formação.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção 2: Projetos -->
+        <section id="projetos" class="projects-section">
+            <h2>Meus Projetos</h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="profissionais">Profissionais</button>
+                <button class="tab-btn" data-tab="pessoais">Pessoais</button>
+                <button class="tab-btn" data-tab="academicos">Acadêmicos</button>
+            </div>
+            
+            <div class="tab-content active" id="profissionais">
+                <div class="project-grid">
+                    <!-- Projeto exemplo -->
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Projeto Profissional 1</h3>
+                        <p>Descrição breve do projeto</p>
+                        <a href="#" class="btn">Ver Projeto</a>
+                    </div>
+                    <!-- Adicione mais projetos aqui -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="pessoais">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Projeto Pessoal 1</h3>
+                        <p>Descrição breve do projeto</p>
+                        <a href="#" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="academicos">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Projeto Acadêmico 1</h3>
+                        <p>Descrição breve do projeto</p>
+                        <a href="#" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: Contato -->
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato</h2>
+            <div class="contact-info">
+                <a href="https://github.com/seu-usuario" class="contact-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:seu.email@exemplo.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://linkedin.com/in/seu-usuario" class="contact-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="ano-atual">2023</span> - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
