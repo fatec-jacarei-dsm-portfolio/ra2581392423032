@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfolio Educacional</title>
+    <title>Marcos Vinicius</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <script src="js/script.js"></script>
     <header>
         <nav>
             <ul>
@@ -23,8 +24,8 @@
         <section id="sobre" class="hero-section">
             <div class="overlay"></div>
             <div class="hero-content">
-                <h1 class="typed-text">Olá, sou <span id="nome">Seu Nome</span></h1>
-                <p class="subtitle">Estudante de <span id="curso">Seu Curso</span></p>
+                <h1 class="typed-text">Olá, sou <span id="nome">Marcos Vinícius</span></h1>
+                <p class="subtitle">Estudante de <span id="curso">Desenvolvimento de Software Multiplataforma</span></p>
                 <p class="description">
                     Bem-vindo ao meu portfolio educacional, onde compartilho minha jornada acadêmica
                     e os projetos que tenho desenvolvido ao longo da minha formação.
@@ -37,12 +38,12 @@
             <h2>Meus Projetos</h2>
             
             <div class="tabs">
-                <button class="tab-btn active" data-tab="profissionais">Profissionais</button>
-                <button class="tab-btn" data-tab="pessoais">Pessoais</button>
+                <!-- <button class="tab-btn active" data-tab="profissionais">Profissionais</button> -->
+                <!-- <button class="tab-btn" data-tab="pessoais">Pessoais</button> -->
                 <button class="tab-btn" data-tab="academicos">Acadêmicos</button>
             </div>
             
-            <div class="tab-content active" id="profissionais">
+            <div class="tab-content" id="profissionais">
                 <div class="project-grid">
                     <!-- Projeto exemplo -->
                     <div class="project-card">
@@ -66,15 +67,31 @@
                 </div>
             </div>
             
-            <div class="tab-content" id="academicos">
+            <div class="tab-content active" id="academicos">
                 <div class="project-grid">
+                   <!-- Projeto scrum - abp primeiro semestre -->
                     <div class="project-card">
-                        <div class="project-image"></div>
-                        <h3>Projeto Acadêmico 1</h3>
-                        <p>Descrição breve do projeto</p>
-                        <a href="#" class="btn">Ver Projeto</a>
+                        <div class="project-image hallway-project-img"></div>
+                        <h3>Hallway Education - SCRUM</h3>
+                        <p> Desafio: Criar uma aplicação web, para ensinar e avaliar o conhecimento basico dos usuários sobre a metodologia SCRUM.</p>
+                        <p> Realizado em grupo, junto a outros sete colegas de turma, desenvolvemos uma aplicação web que intenta ensinar os preceitos inicias da metodologia Scrum </p>
+                        <p> Desenvolvido em tecnologia HTML, CSS, JavaScript, sem a utilização de frameworks ou afins.</p>
+                        <a href="https://github.com/hallwaytechgrupo/ABP-2024-2" class="btn">Github do Projeto</a>
+                        <a href="hallwaytech.vercel.app" class="btn">Visite a aplicação</a>
                     </div>
+                   <!-- projeto Boitata - abp segundo semestre -->
+                    <div class="project-card">
+                        <div class="project-image boitata-project-img"></div>
+                        <h3>Boitata - HeatSentinel</h3>
+                        <p> Desafio: Desenvolver uma palicação completa, com interface de sistema, interface de usuário e banco de dados normalizado, em modelo ao <a href="https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/">BDQueimadas</a>.</p>
+                        <p> Realizado em grupo, junto a outros três colegas de turma, desenvolvemos uma aplicação web que busque em banco de dados próprio, e mostra ao usuário informações climaticas específicas, como focos de calor, áreas queimadas e risco de fogo, com opões de filtragens por area ou termporal. </p>
+                        <p> Desenvolvido em tecnologia HTML, CSS, JavaScript, sem a utilização de frameworks ou afins.</p>
+                        <a href="https://github.com/hallwaytechgrupo/Boitata" class="btn">Github do Projeto</a>
+                        
+                    </div>
+                   
                 </div>
+                
             </div>
         </section>
 
@@ -99,6 +116,10 @@
         <p>&copy; <span id="ano-atual">2023</span> - Todos os direitos reservados</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    
 </body>
 </html>

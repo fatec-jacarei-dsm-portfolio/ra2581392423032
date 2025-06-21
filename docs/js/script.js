@@ -67,4 +67,44 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         handleScrollAnimation();
     });
+    
+    // Theme Toggle Functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    
+    // Check for saved theme preference or use device preference
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const storedTheme = localStorage.getItem('theme');
+    
+    if (storedTheme === 'dark' || (!storedTheme && prefersDarkScheme.matches)) {
+        document.body.classList.add('dark-theme');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        
+        // Update icon
+        if (document.body.classList.contains('dark-theme')) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+    
+    // Listen for OS theme changes
+    prefersDarkScheme.addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            if (e.matches) {
+                document.body.classList.add('dark-theme');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                document.body.classList.remove('dark-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+    });
 });
