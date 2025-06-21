@@ -6,6 +6,7 @@
     /* Light Theme (default) */
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
+    --terciairy-color: #4ddbb8;
     --dark-color: #2c3e50;
     --light-color: #ecf0f1;
     --transition: all 0.3s ease;
@@ -319,8 +320,8 @@ footer {
 /* Theme Toggle Button */
 .theme-toggle {
     position: fixed;
-    top: 2vh;
-    right: 2vw;
+    bottom: 2vh;
+    left: 2vw;
     z-index: 1001;
     width: 3vw;
     height: 3vw;
@@ -345,6 +346,78 @@ footer {
     font-size: 1.5vw;
     min-font-size: 16px;
     color: var(--text-color);
+}
+
+/* About Section */
+.about-section {
+    padding: 10vh 5vw;
+    background-color: var(--bg-color);
+}
+
+.about-section h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 4vw;
+    color: var(--dark-color);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4vw;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 0 0 25rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0.4vw 1.5vw var(--card-shadow);
+}
+
+.about-content {
+    flex: 1 1 40rem;
+}
+
+.about-content h3 {
+    color: var(--primary-color);
+    font-size: 2.5vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.about-content p {
+    margin-bottom: 2vh;
+    font-size: 1.8vw;
+    line-height: 1.8;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-top: 2vh;
+}
+
+.skill-tag {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5vh 1.5vw;
+    border-radius: 2rem;
+    font-size: 1.6vw;
+}
+.subskill-tag {
+    background-color: var(--terciairy-color);
+    color: white;
+    padding: 0.5vh 1.5vw;
+    border-radius: 2rem;
+    font-size: 1.6vw;
 }
 
 /* Responsividade - ajustes para diferentes tamanhos de tela */
@@ -396,6 +469,27 @@ footer {
     
     .contact-link i {
         font-size: 8vw;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image {
+        flex: 0 0 20rem;
+    }
+    
+    .about-content h3 {
+        font-size: 4vw;
+    }
+    
+    .about-content p {
+        font-size: 3.2vw;
+    }
+    
+    .skill-tag {
+        font-size: 3vw;
     }
 }
 
