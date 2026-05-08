@@ -235,6 +235,15 @@ nav ul li a:hover {
 .boitata-project-img {
     background-image: url('../assets/images/boitataLogoT.png');
 }
+.skyhawk-project-img {
+    background-image: url('../assets/images/logo_skyhawk.png');
+}
+.nexdose-project-img {
+    background-image: url('../assets/images/nexdose.png');
+}
+.construcao-img {
+    background-image: url('../assets/images/construcao.png');
+}
 
 .project-card h3 {
     padding: 1.5vw 1.5vw 0.5vh;

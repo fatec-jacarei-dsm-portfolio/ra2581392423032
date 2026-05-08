@@ -4,7 +4,7 @@
 
 # Portfólio de Projetos - Fatec Jacareí
 
-  <img src="./utils/face.jpeg" width="180">
+  <img src="./utils/face2.png" width="180">
 
 ### Aluno: Marcos Vinícius S. A. Oliveira
 
